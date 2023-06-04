@@ -1,0 +1,37 @@
+name: Deploy Personal to Prod
+
+on:
+    release:
+      types: [published]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js to build repo ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install --legacy-peer-deps
+    - run: npm run build --if-present
+    - name: SFTP Deploy to emgenbro.net
+      uses: sand4rt/ftp-deployer@v1.3
+      with:
+        sftp: true # optional
+        host: ${{ secrets.PROD_ENV_HOST }} # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
+        port: 22 # optional, default is: 21
+        username: ${{ secrets.PROD_ENV_USERNAME }} # FTP username
+        password: ${{ secrets.PROD_ENV_PASSWORD }} # FTP password
+        remote_folder: emgenbro.net # optional, remote path of your FTP server
+        local_folder: dist/ # optional, local path, default is: dist
+        cleanup: false # optional, remove existing files inside FTP remote folder
+        pasive: true # optional
