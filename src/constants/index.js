@@ -151,7 +151,7 @@ const experiences = [
     ],
   },
   {
-    title: "Lead Software Engineer",
+    title: "Senior Software Engineer",
     company_name: "Liberty Mutual",
     icon: liberty,
     iconBg: "#E6DEDD",
@@ -167,7 +167,7 @@ const experiences = [
     ],
   },
   {
-    title: "Senior Software Developer",
+    title: "Lead Software Developer",
     company_name: "ITT Educational Services",
     icon: itt,
     iconBg: "#383E56",
