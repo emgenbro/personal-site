@@ -34,6 +34,11 @@ import tesla from "./company/tesla.png";
 import liberty from "./company/libertymutual.jpg";
 import irwin from "./company/irwin.png";
 
+import facebook from "./social/facebook_icon.png";
+import githubicon from "./social/github_icon.png";
+import linkedin from "./social/linkedin_icon.png";
+import twitter from "./social/twitter_blue_icon.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -44,19 +49,23 @@ export {
   logo,
   backend,
   creator,
+  facebook,
+  linkedin,
+  twitter,
   harvard,
   purdue,
   itt,
   irwin,
   mobile,
   web,
+  git,
   github,
+  githubicon,
   menu,
   close,
   css,
   docker,
   figma,
-  git,
   html,
   javascript,
   liberty,

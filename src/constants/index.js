@@ -3,6 +3,11 @@ import {
   mobile,
   backend,
   creator,
+  linkedin,
+  github,
+  githubicon,
+  facebook,
+  twitter,
   web,
   javascript,
   typescript,
@@ -51,16 +56,24 @@ export const navLinks = [
 const services = [
 
   {
-    title: "Engineering Manager",
-    icon: mobile,
+    title: "Linked In",
+    icon: linkedin,
+    url: "https://www.linkedin.com/in/emgenbro/",
   },
   {
-    title: "Technologist",
-    icon: web,
+    title: "Github",
+    icon: githubicon,
+    url: "https://github.com/emgenbro",
   },
   {
-    title: "Innovator",
-    icon: backend,
+    title: "Facebook",
+    icon: facebook,
+    url: "https://www.facebook.com/emgenbro",
+  },
+  {
+    title: "Twitter",
+    icon: twitter,
+    url: "https://twitter.com/emgenbro",
   },
 ];
 
