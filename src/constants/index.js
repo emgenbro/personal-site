@@ -203,12 +203,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 1999 - January 2004",
     points: [
-      "Assisted management team with evaluating 3rd party vendor application packages.",
-      "Conceptualized performance enhancements and implemented within platform.",
-      "Managed the transition of the platform to clients.",
-      "Handled support for outstanding platform opportunities.",
-      "Developed platform using Enterprise Java, FileNet P8, iLog Jrules, Oracle 9i and Apache Jetspeed.",
-      "Managed development and test environment hardware.",
+      "Developed advanced e-commerce applications.",
+      "Managed mission critical e-commerce servers.",
+      "Handled Y2K server patching.",
+      "Provided support for all computer-related issues.",
     ],
   },
   {
