@@ -37,7 +37,7 @@ import irwin from "./company/irwin.png";
 import facebook from "./social/facebook_icon.png";
 import githubicon from "./social/github_icon.png";
 import linkedin from "./social/linkedin_icon.png";
-import twitter from "./social/twitter_blue_icon.png";
+import twitter from "./social/twitter-x-logo-blue-square-20854.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
