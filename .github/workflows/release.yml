@@ -24,7 +24,7 @@ jobs:
     - run: npm install --legacy-peer-deps
     - run: npm run build --if-present
     - name: SFTP Deploy to emgenbro.net
-      uses: sand4rt/ftp-deployer@v1.3
+      uses: sand4rt/ftp-deployer@v1.8
       with:
         sftp: true # optional
         host: ${{ secrets.PROD_ENV_HOST }} # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
